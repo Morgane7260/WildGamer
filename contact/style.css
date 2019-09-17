@@ -7,10 +7,12 @@ body {
     color: #222;
     margin: 1em;
     border: solid 1px #BA2E2E;
+    font-family: ‘Fira Code’, monospace;
 }
 
 /*Titres*/
 h1, h2 {
+    font-family: ‘Permanent Marker’, cursive;
     text-align: center;
     padding: 0.5em;
 }
