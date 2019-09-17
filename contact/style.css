@@ -1,0 +1,88 @@
+body {
+    background-color: #222;
+}
+
+.container {
+    background-color: #ffffff;
+    color: #222;
+    margin: 1em;
+}
+
+/*Titres*/
+h1, h2 {
+    text-align: center;
+    padding: 0.5em;
+}
+
+/*Images*/
+.container-img {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-img img {
+    width: 100px;
+    height: 100px;
+    -webkit-transition: .3s ease-in-out !important; 
+    transition: .3s ease-in-out !important;
+    border-radius: 5%;
+}
+
+.container-img img:hover {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%; 
+}
+
+.avatar {
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#alex, #ismael, #morgane, #elodie {
+    opacity: 0;
+}
+
+.container-img:hover #alex {
+    opacity:1;
+}
+
+.container-img:hover #ismael {
+    opacity:1;
+}
+
+.container-img:hover #morgane {
+    opacity:1;
+}
+
+.container-img:hover #elodie {
+    opacity:1;
+}
+
+/*Ligne*/
+hr {
+    border: dotted 1px #222;
+    margin-top: 3em;
+}
+
+/*Formulaire*/
+form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5em;
+
+}
+
+.formulaire {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+.bouton {
+    justify-content: flex-end;
+}
+
+/*@media screen and (max-width: 768px);*/
