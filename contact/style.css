@@ -7,14 +7,15 @@ body {
     color: #222;
     margin: 1em;
     border: solid 1px #BA2E2E;
-    font-family: ‘Fira Code’, monospace;
+    font-family: 'Fira Code', monospace;
 }
 
 /*Titres*/
 h1, h2 {
-    font-family: ‘Permanent Marker’, cursive;
+    font-family: 'Luckiest Guy', cursive;
     text-align: center;
     padding: 0.5em;
+    margin: 2em;
 }
 
 /*Images*/
@@ -29,13 +30,14 @@ h1, h2 {
     width: 100px;
     height: 100px;
     -webkit-transition: .3s ease-in-out !important; 
-    transition: .3s ease-in-out !important;
+    transition: .4s ease-in-out !important;
     border-radius: 5%;
+    margin: 1em;
 }
 
 .container-img img:hover {
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%; 
 }
 
@@ -44,24 +46,43 @@ h1, h2 {
     text-align: center;
 }
 
-#alex, #ismael, #morgane, #elodie {
+.alex, 
+.ismael, 
+.morgane, 
+.elodie {
     opacity: 0;
 }
 
-.container-img:hover #alex {
-    opacity:1;
+#alex-img:hover .alex {
+    opacity: 1;
 }
 
-.container-img:hover #ismael {
-    opacity:1;
+#ismael-img:hover .ismael {
+    opacity: 1;
 }
 
-.container-img:hover #morgane {
-    opacity:1;
+#morgane-img:hover .morgane {
+    opacity: 1;
 }
 
-.container-img:hover #elodie {
-    opacity:1;
+#elodie-img:hover .elodie {
+    opacity: 1;
+}
+
+/*Texte*/
+.texte {
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    font-size: 20px;
+    color: #BA2E2E;
+}
+
+.texte p {
+    text-align: center;
+    max-width: 1200px;
 }
 
 /*Ligne*/
@@ -77,8 +98,9 @@ hr {
     margin: 0 auto;
 }
 
-.formulaire * {
-    box-sizing: border-box;
+.formulaire li input,
+.formulaire li textarea {
+    padding: 10px;
 }
 
 .cases li {

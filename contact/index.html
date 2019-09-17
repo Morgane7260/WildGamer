@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href=“https://fonts.googleapis.com/css?family=Fira+Code%7CMonofett%7CPermanent+Marker&display=swap” rel=“stylesheet”>
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Contact/À propos</title>
 </head>
@@ -16,24 +16,30 @@
         <h1>À propos</h1>
         <section class="container-img">
             <div class="avatar">
-                <img src="https://zupimages.net/up/19/38/6eqd.jpg" alt="Alex le trafiquant du net">
-                <p id="alex">Alexandre</p>
+                <img id="alex-img" src="https://zupimages.net/up/19/38/6eqd.jpg" alt="Alex le trafiquant du net">
+                <div class="alex">Alexandre</div>
             </div>
             <div class="avatar">
-                <img src="https://zupimages.net/up/19/38/s5hl.jpg" alt="Ismaël en pleine crise d'adolescence">
-                <p id="ismael">Ismaël</p>
+                <img id="ismael-img" src="https://zupimages.net/up/19/38/s5hl.jpg" alt="Ismaël en pleine crise d'adolescence">
+                <div class="ismael">Ismaël</div>
             </div>
             <div class="avatar">
-                <img src="https://zupimages.net/up/19/38/ftd6.jpg" alt="Morgane la gamine cachée">
-                <p id="morgane">Morgane</p>
+                <img id="morgane-img" src="https://zupimages.net/up/19/38/ftd6.jpg" alt="Morgane la gamine cachée">
+                <div class="morgane">Morgane</div>
             </div>
-            <div class="avatar"><img src="https://zupimages.net/up/19/38/d0za.jpg" alt="Elodie la tête en l'air">
-                <p id="elodie">Elodie</p>
+            <div class="avatar">
+                <img id="elodie-img" src="https://zupimages.net/up/19/38/d0za.jpg" alt="Elodie la tête en l'air">
+                <div class="elodie">Elodie</div>
             </div>
         </section>
 
-        <h2>Le Wild Gamer c'est qui ?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum dolor sequi, mollitia nesciunt consequuntur eveniet nobis dolore! Ipsa blanditiis officia suscipit eos. Obcaecati quibusdam neque, hic provident porro saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore distinctio ut aspernatur temporibus eum? Eaque obcaecati quaerat eligendi neque repellendus nobis, distinctio optio excepturi perferendis dolore unde voluptatum soluta.</p>
+        <h2>Le Wild Gamer c'est quoi ?</h2>
+        <div class="texte">
+            <p>
+                <span>Le Wild Gamer</span> ce n'est pas seulement un blog. C'est un lieu de partages créé par <span>4</span> personnes passionnées par les <span>jeux vidéos</span>. Actualités, interviews, nouveautés, streaming, etc. Vous trouverez de tout sur ce site !
+                <br>Même si <span>Alexandre</span> est un fan inconditionné de la série Super Smash Bros, cela ne l'a pas empêché de s'allier avec <span>Elodie</span>, qui préfère les jeux plus calmes comme Animal Crossing. Sans parler d'<span>Ismaël</span> et de <span>Morgane</span>, deux grands adorateurs des jeux rétro. Les jeux vidéos ont toujours été un sujet de conversation qui ont rapproché les gens, malgré les différents goûts. C'est pour cela que ce <span>monde</span> est beau et unique.
+            </p>
+        </div>
 
     <hr />
         
@@ -41,15 +47,15 @@
         <form class="formulaire">
             <ul class="cases">
                 <li>
-                    <label for="nom">Votre nom : </label>
+                    <label for="nom">Votre nom</label>
                     <input type="text" id="nom" placeholder="John Doe">
                 </li>
                 <li>
-                    <label for="email">Votre email : </label>
+                    <label for="email">Votre email</label>
                     <input type="email" id="email" placeholder="johndoe@gmail.com">
                 </li>
                 <li>
-                    <label for="message">Votre message : </label>
+                    <label for="message">Votre message</label>
                     <textarea id="message" cols="30" rows="5" placeholder="Message"></textarea>
                 </li> 
                 <li>
