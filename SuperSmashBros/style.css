@@ -1,0 +1,53 @@
+@media screen all and (max-width: 1920px)
+{
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+body {
+    font-family: "hack";
+    background-color: #222; 
+    font-size: 20px;
+    margin: 2em;
+    border: solid 3px #BA2E2E;
+}
+
+h1 {
+    font-family: "pixelmix";
+    text-align: center;
+    padding: 10px 10px;;
+    color: black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*div {
+    padding: 1px;
+}*/
+
+p {
+    color: black;
+    margin: 15px;
+}
+
+p:nth-child(7) {
+    padding-bottom: 15px;
+}
+
+form {
+    margin: 15px;
+}
+
+.formulaire {
+    text-align: center;
+
+}
+
+section {
+    background-color: white;
+}
