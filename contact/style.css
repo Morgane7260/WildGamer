@@ -71,21 +71,39 @@ hr {
 }
 
 /*Formulaire*/
-form {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1.5em;
-
-}
-
 .formulaire {
+    width: 70%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.formulaire * {
+    box-sizing: border-box;
+}
+
+.cases li {
     display: flex;
-    justify-content: center;
-    width: 300px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1em;
 }
 
-.bouton {
-    justify-content: flex-end;
+.cases > li > label {
+    flex: 1 0 120px;
 }
 
+.cases > li > label + * {
+    flex: 1 0 220px;
+    border: solid 1px #222;
+}
+
+.cases li button {
+    margin-left: auto;
+    padding: 5px 10px;
+    border: none;
+    background: #222;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
 /*@media screen and (max-width: 768px);*/

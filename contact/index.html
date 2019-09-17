@@ -38,19 +38,24 @@
     <hr />
         
         <h1>Nous contacter</h1>
-        <form>
-            <div>
-               <label>Votre nom : <input class="formulaire" type="text" placeholder="John Doe" /></label>
-            </div>
-            <div>
-               <label>Votre email : <input class="formulaire" type="email" placeholder="johndoe@email.com" /></label>
-            </div>
-            <div>
-                <label>Votre message : <textarea class="formulaire" placeholder="Message"></textarea></label>
-            </div>
-            <div class="bouton">
-                <input type="submit" value="Envoyer !">
-            </div>
+        <form class="formulaire">
+            <ul class="cases">
+                <li>
+                    <label for="nom">Votre nom : </label>
+                    <input type="text" id="nom" placeholder="John Doe">
+                </li>
+                <li>
+                    <label for="email">Votre email : </label>
+                    <input type="email" id="email" placeholder="johndoe@gmail.com">
+                </li>
+                <li>
+                    <label for="message">Votre message : </label>
+                    <textarea id="message" cols="30" rows="5" placeholder="Message"></textarea>
+                </li> 
+                <li>
+                    <button type="submit">Envoyer !</button>
+                </li>
+            </ul>
         </form>
     </div>
     <footer>
