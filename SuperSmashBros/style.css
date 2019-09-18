@@ -1,24 +1,50 @@
-@media screen all and (max-width: 1920px)
+/*@media screen all and (max-width: 1920px)
 {
+    body {
+        font-size: 
+    }
     img {
         width: 100%;
-        height: auto;
+        height: 150px;
     }
-}
+
+    .formulaire {
+        display: block;
+        text-align: center;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    .container {
+        margin: 1em;
+    }
+}*/
 
 body {
-    font-family: "hack";
+    font-family: 'Fira Code', monospace;
     background-color: #222; 
-    font-size: 20px;
+    font-size: 16px;
     margin: 2em;
-    border: solid 3px #BA2E2E;
 }
 
-h1 {
-    font-family: "pixelmix";
+.container {
+    background: #ffffff;
+    color: #222;
+    border: solid 1px #BA2E2E;
+}
+
+h1, h2, {
+    font-family: 'Luckiest Guy', cursive;
     text-align: center;
-    padding: 10px 10px;;
-    color: black;
+    padding: 0.5em;
+    margin: 2em;
+    color: #BA2E2E;
+}
+
+h1, h2, h3:hover {
+    background-color: ;
 }
 
 img {
@@ -26,28 +52,62 @@ img {
     height: auto;
 }
 
-/*div {
-    padding: 1px;
-}*/
-
 p {
     color: black;
     margin: 15px;
+    padding: 15px;
 }
 
-p:nth-child(7) {
-    padding-bottom: 15px;
+.mode {
+    font-style: italic;
+    font-weight: bold;
 }
 
-form {
-    margin: 15px;
+.super {
+    font-style: italic;
 }
 
 .formulaire {
+    width: 70%;
+    max-width: 500px;
+    /*margin-left: 1,5em;*/
+    padding: 15px;
+    display: block;
     text-align: center;
-
+    margin-right: 0;
 }
 
-section {
-    background-color: white;
+.formulaire li input,
+.formulaire li textarea {
+    padding: 10px;
+}
+
+.cases li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1em;
+}
+
+.cases > li > label {
+    flex: 1 0 120px;
+}
+
+.cases > li > label + * {
+    flex: 1 0 220px;
+    border: solid 1px #222;
+}
+
+.cases li button {
+    margin-left: auto;
+    padding: 5px 10px;
+    border: none;
+    background: #222;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+ul.cases {
+    padding: 0;
 }
