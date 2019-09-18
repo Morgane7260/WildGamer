@@ -9,9 +9,9 @@ body {
 }
 
 .block {
-    background-color: #f7f3f3;
+    background-color: #ffffff;
     border: solid 2px #BA2E2E;
-    margin: 0 10% 2em 10%;    
+    margin-bottom: 2em; 
 }
 
 /*Titres*/
@@ -23,7 +23,8 @@ h1, h2 {
 /*Images*/
 .container-img {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
     margin: 2em 0;
     align-items: stretch;
     flex-wrap: wrap;
@@ -54,7 +55,6 @@ h1, h2 {
 
 .alex, .ismael, .morgane, .elodie {
     opacity: 0;
-    border-style: inset;
 }
 
 .alex-img:hover + .alex {
@@ -170,7 +170,7 @@ input#email {
         width: 80px;
         height: 80px;
         border-radius: 5%;
-        margin: 0.5em;
+        margin: 0.8em;
     }
 
     div.avatar {
