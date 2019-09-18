@@ -7,9 +7,26 @@ body {
 }
 
 .container {
-    background: #ffffff;
     color: #222;
+}
+
+div {
     border: solid 2px #BA2E2E;
+    background-color: white;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.zoom-out img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.zoom-out img:hover {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 h1, h2 {
@@ -25,9 +42,11 @@ hr {
 }
 
 img {
-    width: 100%;
+    width: 100.6%;
     height: auto;
+    margin-bottom: -0.3em;
 }
+
 
 p {
     color: black;
@@ -48,6 +67,8 @@ p {
     width: 100%;
     display: flex;
     justify-content: center;
+    border: solid 2px #BA2E2E;
+    background-color: white;
 }
 
 ul {
@@ -62,40 +83,42 @@ li {
     margin: 1em;
 }
  .bouton {
-    display: inline-block;
     float: right;
  }
 
  input#pseudo {
     width: 48.99%;
     height: 1.5em;
-    border: solid 1px black;
+    border: 1px black solid;
  }
 
  textarea {
     border: solid 1px black;
  }
 
-/*@media screen all and (max-width: 1920px)
+ .back {
+    position: fixed;
+    display: block;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    bottom: 15px;
+ }
+
+@media screen and (max-width: 768px)
 {
     body {
-        font-size: 
-    }
-    img {
-        width: 100%;
-        height: 150px;
-    }
-
-    .formulaire {
-        display: block;
-        text-align: center;
+        font-size: 12px;
     }
 
     h1, h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .container {
         margin: 1em;
     }
-}*/
+    input#pseudo{
+        float: right;
+    }
+}
