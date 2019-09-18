@@ -91,11 +91,31 @@ hr {
 
 /*Formulaire*/
 .formulaire {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+ }
+
+ ul {
+    list-style:none;
+    padding: 0;
+ }
+
+ li {
+    flex-wrap: wrap;
     align-items: center;
-    margin: 2em 0;
-}
+    margin: 1em;
+ }
+
+ .bouton {
+    display: inline-block;
+    float: right;
+ }
+ input#nom{
+    width: 48.99%;
+    height: 1.5em;
+    border: solid 1px black;
+ }
 
 /* Back to Top button */
 .backToTop {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href=“https://fonts.googleapis.com/css?family=Fira+Code%7CMonofett%7CPermanent+Marker&display=swap” rel=“stylesheet”>
+    <link href=“https://fonts.googleapis.com/css?family=Fira+Code|Monofett|Permanent+Marker&display=swap” rel=“stylesheet”>
     <link rel="stylesheet" href="style.css">
     <title>Contact/À propos</title>
 </head>
@@ -48,22 +48,21 @@
     <hr />
         <h1>Nous contacter</h1>
     <hr />
-        <form class="formulaire">
-            <div class="cases">
-                <label for="nameInput">Votre nom :</label>
-                <input type="text" id="nameInput" placeholder="John Doe">
-            </div>
-            <div>
-                <label for="emailInput">Votre email :</label>
-                <input type="text" id="emailInput" placeholder="contact@email.com" required>
-            </div>
-            <div>
-                <label for="message">Votre message :</label>
-                <textarea id="message" cols="30" rows="5" placeholder="Your message" required></textarea>
-            </div>
-            <div class="bouton">
-                <button type="button">Envoyer !</button>
-            </div>
+        <form class=“formulaire”>
+            <ul>
+                <li>
+                    <label for=“nom” class=“nom”>Votre nom : <input id=“nom” type=“text”></label>
+                </li>
+                <li>
+                    <label for=“email” class="email">Votre email : <input id=“email” type=“email”></label>
+                </li>
+                <li>
+                    <textarea name=“message” cols=“45” rows=“5">Ajoutez votre commentaire</textarea>
+                </li>
+                <li>
+                    <button class=“bouton” type=“button” rows=“10” cols=“35">Envoyer !</button>
+                </li>
+            </ul>
         </form>
     </div>
     <footer>
