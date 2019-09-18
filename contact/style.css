@@ -1,12 +1,12 @@
 body {
     background-color: #222;
+    margin: 2em;
 }
 
 .container {
     background-color: #ffffff;
     color: #222;
-    margin: 1em;
-    border: solid 1px #BA2E2E;
+    border: solid 2px #BA2E2E;
     font-family: 'Fira Code', monospace;
 }
 
@@ -128,4 +128,58 @@ hr {
     text-transform: uppercase;
     border-radius: 5px;
 }
-/*@media screen and (max-width: 768px);*/
+
+@media screen and (max-width: 768px) {
+    h1, h2 {
+        font-family: 'Luckiest Guy', cursive;
+        text-align: center;
+        padding: 0.2em;
+        margin: 1em;
+    }
+
+    .container-img {
+        flex-direction: column;
+    }
+
+    .container-img img {
+        width: 80px;
+        height: 80px;
+        border-radius: 5%;
+        margin: 0.5em;
+    }
+
+    .texte {
+        font-size: 15px;
+        margin: 0.5em;
+    }
+
+    span {
+        font-size: 17px;
+    }
+
+    .formulaire {
+        width: 50%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+    .formulaire li input,
+    .formulaire li textarea {
+        padding: 5px;
+    }
+
+    .cases {
+        display: flex;
+        flex-direction: column;
+        margin-block-start: inherit;
+        margin-block-end: inherit;
+        margin-inline-start: inherit;
+        margin-inline-end: inherit;
+        padding-inline-start: inherit;
+    }
+
+}
+
+/* @media screen and (min-width: 360px) and (max-width: 460px) {
+
+} */
