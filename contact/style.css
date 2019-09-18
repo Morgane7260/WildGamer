@@ -3,9 +3,7 @@ body {
     margin: 2em;
 }
 
-.container {/*
-    background-color: #ffffff;
-    border: solid 2px #BA2E2E;*/
+.container {
     color: #222;
     font-family: 'Fira Code', monospace;
 }
