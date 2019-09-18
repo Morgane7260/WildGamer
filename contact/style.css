@@ -49,19 +49,19 @@ h1, h2 {
     opacity: 0;
 }
 
-#alex-img:hover .alex {
+.alex-img:hover + .alex {
     opacity: 1;
 }
 
-#ismael-img:hover .ismael {
+.ismael-img:hover + .ismael {
     opacity: 1;
 }
 
-#morgane-img:hover .morgane {
+.morgane-img:hover + .morgane {
     opacity: 1;
 }
 
-#elodie-img:hover .elodie {
+.elodie-img:hover + .elodie {
     opacity: 1;
 }
 
@@ -73,7 +73,7 @@ h1, h2 {
 }
 
 span {
-    font-size: 20px;
+    font-size: 17px;
     color: #BA2E2E;
 }
 
@@ -94,43 +94,44 @@ hr {
     width: 100%;
     display: flex;
     justify-content: center;
- }
+}
 
- ul {
+ul {
     list-style:none;
-    padding: 0;
- }
+    padding: auto;
+}
 
- li {
+li {
     flex-wrap: wrap;
     align-items: center;
     margin: 1em;
- }
+}
 
- .bouton {
-    display: inline-block;
+button{
     float: right;
- }
- input#nom{
-    width: 48.99%;
+}
+ 
+input#nom{
+    width: fit-content;
     height: 1.5em;
     border: solid 1px black;
- }
+}
 
 /* Back to Top button */
 .backToTop {
     position: fixed;
     display: block;
-    background-image: url("https://i.postimg.cc/MTvT30Wb/back-To-Top.png");
+    background-image: url("https://zupimages.net/up/19/38/5c93.png");
     bottom: 15px;
     right: 10px;
     background-size: 50px 50px;
     width: 50px;
     height: 50px;
+    opacity: 0.7;
 }
   
 .backToTop:hover {
-    opacity : 0.7;
+    opacity : 1;
 }
 
 @media screen and (max-width: 768px) {
