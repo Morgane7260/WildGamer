@@ -12,10 +12,8 @@ body {
 
 /*Titres*/
 h1, h2 {
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Permanent Marker', cursive;
     text-align: center;
-    padding: 0.5em;
-    margin: 2em;
 }
 
 /*Images*/
@@ -24,6 +22,7 @@ h1, h2 {
     justify-content: center;
     justify-content: space-around;
     align-items: center;
+    margin: 2em 0;
 }
 
 .container-img img {
@@ -46,10 +45,7 @@ h1, h2 {
     text-align: center;
 }
 
-.alex, 
-.ismael, 
-.morgane, 
-.elodie {
+.alex, .ismael, .morgane, .elodie {
     opacity: 0;
 }
 
@@ -73,6 +69,7 @@ h1, h2 {
 .texte {
     display: flex;
     justify-content: center;
+    margin: 2em 0;
 }
 
 span {
@@ -87,46 +84,33 @@ span {
 
 /*Ligne*/
 hr {
-    border: dotted 1px #222;
-    margin-top: 3em;
+    width: 10%;
+    height: 3px;
+    background-color: #222;
 }
 
 /*Formulaire*/
 .formulaire {
-    width: 70%;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.formulaire li input,
-.formulaire li textarea {
-    padding: 10px;
-}
-
-.cases li {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    margin: 1em;
+    margin: 2em 0;
 }
 
-.cases > li > label {
-    flex: 1 0 120px;
+/* Back to Top button */
+.backToTop {
+    position: fixed;
+    display: block;
+    background-image: url("https://i.postimg.cc/MTvT30Wb/back-To-Top.png");
+    bottom: 15px;
+    right: 10px;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
 }
-
-.cases > li > label + * {
-    flex: 1 0 220px;
-    border: solid 1px #222;
-}
-
-.cases li button {
-    margin-left: auto;
-    padding: 5px 10px;
-    border: none;
-    background: #222;
-    color: #ffffff;
-    text-transform: uppercase;
-    border-radius: 5px;
+  
+.backToTop:hover {
+    opacity : 0.7;
 }
 
 @media screen and (max-width: 768px) {
@@ -155,27 +139,6 @@ hr {
 
     span {
         font-size: 17px;
-    }
-
-    .formulaire {
-        width: 50%;
-        max-width: 200px;
-        margin: 0 auto;
-    }
-    
-    .formulaire li input,
-    .formulaire li textarea {
-        padding: 5px;
-    }
-
-    .cases {
-        display: flex;
-        flex-direction: column;
-        margin-block-start: inherit;
-        margin-block-end: inherit;
-        margin-inline-start: inherit;
-        margin-inline-end: inherit;
-        padding-inline-start: inherit;
     }
 
 }
