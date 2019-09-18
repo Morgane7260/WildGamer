@@ -100,9 +100,13 @@ li {
     position: fixed;
     display: block;
     width: 20px;
-    height: 20px;
-    right: 10px;
-    bottom: 15px;
+    height: 22px;
+    right: 33px;
+    bottom: 35px;
+ }
+
+ .backtotop {
+    width: 20px;
  }
 
 @media screen and (max-width: 768px)
