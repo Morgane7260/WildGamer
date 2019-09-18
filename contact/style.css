@@ -1,5 +1,5 @@
 body {
-    background-color: #222;
+    background-color: #222222;
     margin: 2em;
 }
 
@@ -9,9 +9,9 @@ body {
 }
 
 .block {
-    background-color: white;
+    background-color: #f7f3f3;
     border: solid 2px #BA2E2E;
-    margin-bottom: 2em;
+    margin: 0 10% 2em 10%;    
 }
 
 /*Titres*/
@@ -44,16 +44,17 @@ h1, h2 {
     border-radius: 50%; 
 }
 
-div.avatar {
+.avatar {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    width: 25%;
+    width: 15%;
     justify-content: center;
 }
 
 .alex, .ismael, .morgane, .elodie {
     opacity: 0;
+    border-style: inset;
 }
 
 .alex-img:hover + .alex {
@@ -156,14 +157,13 @@ input#email {
 
 @media screen and (max-width: 768px) {
     h1, h2 {
-        font-family: 'Luckiest Guy', cursive;
-        text-align: center;
         padding: 0.2em;
         margin: 1em;
     }
 
     .container-img {
         flex-direction: column;
+        align-items: center;
     }
 
     .container-img img {
