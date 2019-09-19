@@ -209,6 +209,15 @@ textarea {
         padding: 0.2em;
         margin: 1em;
     }
+    
+    .title {
+        font-size: 45px;
+    }
+
+    .logo {
+        padding: 0px;
+        font-size: 16px;
+    }
 
     .container-img {
         flex-direction: column;
@@ -267,6 +276,15 @@ textarea {
  @media screen and (max-width: 525px) {
     div.avatar {
         margin-bottom: 3.5em;
+    }
+
+    .title {
+        font-size: 42px;
+    }
+
+    .logo {
+        padding: 0px;
+        font-size: 13px;
     }
 } 
 
@@ -540,6 +558,15 @@ nav ul li a{
     nav {
         top: 125px;
     }
+
+    .title {
+        font-size: 45px;
+    }
+
+    .logo {
+        padding: 0px;
+        font-size: 13px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -548,6 +575,15 @@ nav ul li a{
     }
     nav {
         top: 150px;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+
+    .logo {
+        padding: 0px;
+        font-size: 10px;
     }
 }
 
@@ -558,8 +594,13 @@ h1{
 label{
     padding:5px 0px;
 }
+
+.title {
+    font-size: 29px;
+}
+
 #logo{
-    font-size: 20px;
+    font-size: 10px;
 }
 nav {
         top: 150px;
@@ -577,5 +618,9 @@ section.container-img {
     }
     nav {
         top: 150px;
+    }
+
+    .title {
+        font-size: 28px;
     }
 }
