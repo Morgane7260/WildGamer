@@ -40,10 +40,10 @@ h1, h2 {
 /*Images*/
 .container-img {
     display: flex;
-    align-items: center;
-    margin: 2em 0;
+    justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
+    margin: 2em auto;
 }
 
 .container-img img{
@@ -144,14 +144,13 @@ li {
 }
 
 label.nom {
-    float: left;
+    display: inline-block;
     margin-bottom: 1em;
     width: 100%;
 }
 
 label.email {
     display: inline-block;
-    float: left;
     margin-bottom: 1em;
     width: 100%;
 }
@@ -160,8 +159,7 @@ input#nom{
     height: 1.5em;
     border: solid 1px black;
     float: right;
-    width: 100%;
-
+    width: 50%;
 }
 
 input#email {
@@ -485,7 +483,7 @@ div#social-test {
 }
 
 @media only screen and (max-width: 980px) {
-header{
+header {
     padding:0px 0px;
 }
 #logo{
@@ -499,7 +497,7 @@ input[type=checkbox] {
     background:none;
 }
 
-input[type=checkbox]:fous{
+input[type=checkbox]:fous {
     background:#fff;
 }
 
