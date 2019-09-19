@@ -4,7 +4,18 @@ body {
 }
 
 .title {
-    color:#999999;
+    color:#ffffff;
+    font-family: ‘Monofett’, cursive;
+}
+
+.menu {
+    color:#ffffff;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.logo {
+    color:#ffffff;
+    font-family: 'Fira Code', monospace;
 }
 
 .container {
@@ -314,8 +325,10 @@ nav ul li a{
     transition: all 0.5s ease 0s;
 }
 nav ul li a:hover{
-    background-color:#999999; 
+    background-color:#ffffff; 
     color:#BA2E2E; 
+    border: double 3px #BA2E2E;
+    border-radius: 10px;
     transition: all 0.5s ease 0s;
 }
 label.toggle-menu {
@@ -482,7 +495,7 @@ nav{
 nav ul{
     background-color:#222222; 
     padding-right: 5px; 
-    border-radius: 10%; 
+    border-radius: 5%; 
     border: 1px solid #BA2E2E;
 }
 nav ul li{
