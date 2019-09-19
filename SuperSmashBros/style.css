@@ -3,18 +3,35 @@ body {
     font-family: 'Fira Code', monospace;
     background-color: #222; 
     font-size: 16px;
-    margin: 2em;
+    margin: 0em 2em;
 }
 
+/*Header*/
 .title {
-    color:#fff;
+    color:#ffffff;
     font-family: 'Schoolbell', cursive;
     font-size: 50px;
+}
+
+.menu {
+    color:#ffffff;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.logo {
+    color:#ffffff;
+    font-family: 'Fira Code', monospace;
 }
 
 .container {
     color: #222;
     font-family: 'Fira Code', monospace;
+}
+
+.block {
+    background-color: white;
+    border: solid 2px #BA2E2E;
+    margin-bottom: 2em;
 }
 
 .border {
@@ -222,7 +239,7 @@ header{
 #logo{
     font-size:18px; 
     text-transform:uppercase; 
-    color:#fff; 
+    color:#ffffff; 
     font-weight:600; 
     padding:20px 0px; 
     display: flex; 
@@ -243,16 +260,14 @@ nav ul li{
 }
 /*nav ul li:last-child{padding-right:0px;}*/
 nav ul li a{
-    color:#fff; 
-    font-family: 'Permanent Marker', cursive;
+    color:#ffffff; 
     font-size:18px; 
-    padding: 15px 20px; 
-    display:inline-block; 
+    padding: 15px 20px;
     transition: all 0.5s ease 0s;
 }
 nav ul li a:hover{
-    background-color:#ffffff; 
-    color:#BA2E2E; 
+    background-color: #ffffff;
+    color: #BA2E2E;
     border: double 3px #BA2E2E;
     border-radius: 10px;
     transition: all 0.2s ease 0s;
