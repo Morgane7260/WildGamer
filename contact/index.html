@@ -7,16 +7,37 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Code|Monofett|Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/vnd.microsoft.icon" href="icon1.png">
-    <title>Contact/À propos</title>
+    <title>Le Wild Gamer</title>
 </head>
 <body>
     <header>
+        <section>
+            <label for="toggle-1" class="toggle-menu">
+                <ul>
+                    <li></li> 
+                    <li></li> 
+                    <li></li>
+                </ul>
+            </label>
+        <h1 class="title">LE WILD GAMER</h1> 
+
+            <input type="checkbox" id="toggle-1">
+            <nav>
+                <ul>
+                    <li><a href="Contact Us/À Propos">Contact Us/À Propos</a></li>
+                    <li><a href="Interview">Interview</a></li>
+                    <li><a href="Partenariats">Partenariats</a></li>
+                    <li><a href="Articles">Articles</a></li>
+                </ul>
+            </nav>
+            <a href="" id="logo" target="_blank">La jungle des informations sur les jeux vidéos</a>
+        </section>
         <a name="top"></a>       
     </header>
     <div class="container">
         <div class="block">
             <hr />
-            <h1>À propos</h1>
+                <h1>À propos</h1>
             <hr />
             <section class="container-img">
                 <div class="avatar avatarAlex">
@@ -39,7 +60,7 @@
         </div>
         <div class="block">
             <hr />
-            <h2>Le Wild Gamer c'est quoi ?</h2>
+                <h2>Le Wild Gamer c'est quoi ?</h2>
             <hr />
             <div class="texte">
                 <p>
@@ -50,18 +71,16 @@
         </div>
         <div class="block">
             <hr />
-            <h1>Nous contacter</h1>
+                <h1>Nous contacter</h1>
             <hr />
 
             <form class="formulaire">
                 <ul>
                     <li>
-                        <label for="nom" class="nom">Votre nom : </label>
-                        <input id="nom" type="text">
+                        <label for="nom" class="nom">Votre nom : <input id="nom" type="text"></label>
                     </li>
                     <li>
-                        <label for="email" class="email">Votre email : </label>
-                        <input id="email" type="email">
+                        <label for="email" class="email">Votre email : <input id="email" type="email"></label>
                     </li>
                     <li>
                         <textarea name="message" cols="45" rows="5">Ajoutez votre commentaire</textarea>
@@ -71,13 +90,33 @@
                     </li>
                 </ul>
             </form>
-        <div>
+        </div>
     </div>
 
-    <footer>
-    </footer>
 
     <!-- Back to Top button -->
-    <a class="back" href="#top"><img class="backtotop" src="https://zupimages.net/up/19/38/1y66.png"></a>
 </body>
+    <footer>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="center">
+            <div id="social-test">
+                <ul class="social">
+                    <li class="footer"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                    <li class="footer"><i class="fa fa-twitter" aria-hidden="true"></i>
+                    </li>
+                    <li class="footer"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    <li class="footer"><i class="fa fa-vimeo" aria-hidden="true"></i>
+                    </li>
+                    <li class="footer"><i class="fa fa-behance" aria-hidden="true"></i></li>
+                    <li class="footer"><i class="fa fa-dribbble" aria-hidden="true"></i>
+                    </li>
+                    <li class="footer"><i class="fa fa-github" aria-hidden="true"></i>
+                    </li>
+                    <li class="footer"><i class="fa fa-pied-piper" aria-hidden="true"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <a class="back" href="#top"><img class="backtotop" src="https://zupimages.net/up/19/38/1y66.png"></a>
+        </footer>
 </html>
