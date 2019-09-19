@@ -3,8 +3,25 @@ body {
     margin: 0 2em 2em 2em;
 }
 
+/*Header*/
 .title {
-    color:#999999;
+    color:#ffffff;
+    font-family: 'Schoolbell', cursive;
+    font-size: 50px;
+}
+
+.menu {
+    color:#ffffff;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.menu a {
+    text-shadow: #ffffff 1px 0 8px;
+}
+
+.logo {
+    color:#ffffff;
+    font-family: 'Fira Code', monospace;
 }
 
 .container {
@@ -16,6 +33,7 @@ body {
     background-color: white;
     border: solid 2px #BA2E2E;
     margin-bottom: 2em;
+    /* box-shadow: 1px 1px 9px #ffffff; */
 }
 
 /*Titres*/
@@ -95,6 +113,12 @@ span {
 
 p {
     margin: 0 2em;
+}
+
+.gifMario {
+    width: 40%;
+    border-radius: 5px;
+    border: solid 2px #222222;
 }
 
 /*Ligne*/
@@ -286,7 +310,7 @@ header{
 #logo{
     font-size:18px; 
     text-transform:uppercase; 
-    color:#999999; 
+    color:#ffffff; 
     font-weight:600; 
     padding:20px 0px; 
     display: flex; 
@@ -307,16 +331,18 @@ nav ul li{
 }
 /*nav ul li:last-child{padding-right:0px;}*/
 nav ul li a{
-    color:#999999; 
+    color:#ffffff; 
     font-size:18px; 
     padding: 15px 20px; 
     display:inline-block; 
     transition: all 0.5s ease 0s;
 }
 nav ul li a:hover{
-    background-color:#999999; 
+    background-color:#ffffff; 
     color:#BA2E2E; 
-    transition: all 0.5s ease 0s;
+    border: double 3px #BA2E2E;
+    border-radius: 10px;
+    transition: all 0.2s ease 0s;
 }
 label.toggle-menu {
     padding-right: 1.5em; 
@@ -346,8 +372,8 @@ input[type=checkbox], label{display:none;}
 .content h2{
     font-size:18px; 
     font-weight:500; 
-    color:#999999; 
-    border-bottom:1px solid #999999; 
+    color:#ffffff; 
+    border-bottom:1px solid #ffffff; 
     display:table; 
     padding-bottom:10px; 
     margin-bottom:10px;
@@ -355,7 +381,7 @@ input[type=checkbox], label{display:none;}
 .content p{
     font-size:14px; 
     line-height:22px; 
-    color:#999999; 
+    color:#ffffff; 
     text-align:justify;
 }
 
@@ -416,7 +442,7 @@ div#social-test {
     height: 50px;
     line-height: 50px;
     padding: 1%;
-    border: 1px solid #999999;
+    border: 1px solid #ffffff;
     cursor: pointer;
     margin: 10px;
     transition: ease .3s;
@@ -459,7 +485,7 @@ input[type=checkbox] {
     background:none;
 }
 input[type=checkbox]:fous{
-    background:#999999;
+    background:#fff;
 }
 label {
     float: right; 
@@ -475,14 +501,14 @@ nav{
     position:absolute; 
     right:4px; 
     top: 125px; 
-    background-color:#999999; 
+    background-color:#ffffff; 
     padding:0px; z-index:99; 
     border-radius: 10%;
 }
 nav ul{
     background-color:#222222; 
     padding-right: 5px; 
-    border-radius: 10%; 
+    border-radius: 5%; 
     border: 1px solid #BA2E2E;
 }
 nav ul li{
