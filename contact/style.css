@@ -110,36 +110,39 @@ hr {
     width: 100%;
     display: flex;
     justify-content: center;
+    justify-content: space-around;
 
 }
 
 ul {
     list-style:none;
     padding: 0;
-    float: left;
 }
 
 li {
     flex-wrap: wrap;
     align-items: center;
-    margin: 1em;
+    margin: 0.8em;
 }
 
 label.nom {
     float: left;
     margin-bottom: 1em;
+    width: 100%;
 }
 
 label.email {
     display: inline-block;
     float: left;
     margin-bottom: 1em;
+    width: 100%;
 }
 
 input#nom{
     height: 1.5em;
     border: solid 1px black;
     float: right;
+    width: 100%;
 
 }
 
@@ -160,6 +163,7 @@ input#email {
 
 textarea {
     border: solid 1px black;
+    width: 98.5%;
 }
 
 
@@ -233,6 +237,11 @@ textarea {
 
     span {
         font-size: 17px;
+    }
+
+    .social{
+        display: flex;
+        flex-wrap: wrap;
     }
 
 }
@@ -368,15 +377,15 @@ footer {
 .social li {
   float:left; 
   padding:0px 10px;
-  }
+}
 .social li i {
   color:#fff; 
   transition: all 0.5s ease 0s;
-  }
+}
 .social li i:hover {
-  color:#fde428; 
-  transition: all 0.5s ease 0s;
-  }
+    color: #BA2E2E;
+    transition: all 0.5s ease 0s;
+}
 
 .center {
   display: table;
@@ -441,6 +450,7 @@ header{
 }
 #logo{
     padding:0px;
+    font-size: 13px;
 }
 input[type=checkbox] {
     position: absolute; 
@@ -463,15 +473,15 @@ input[type=checkbox]:checked ~ nav {
 nav{
     display:none; 
     position:absolute; 
-    right:5px; 
-    text-outline: 125px; 
+    right:4px; 
+    top: 125px; 
     background-color:#999999; 
     padding:0px; z-index:99; 
     border-radius: 10%;
 }
 nav ul{
     background-color:#222222; 
-    padding-right: 10px; 
+    padding-right: 5px; 
     border-radius: 10%; 
     border: 1px solid #BA2E2E;
 }
@@ -497,18 +507,24 @@ nav ul li a{
 }
 
 @media only screen and (max-width: 568px) {
-h1{
-    padding:25px 0px;
-}
-h1 span{
-    display:block;
-}
+    h1{
+        padding:25px 0px;
+    }
+    h1 span{
+        display:block;
+    }
+    nav {
+        top: 125px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
-section {
-    max-width: 90%;
-}
+    section {
+        max-width: 90%;
+    }
+    nav {
+        top: 150px;
+    }
 }
 
 @media only screen and (max-width: 360px) {
@@ -521,13 +537,21 @@ label{
 #logo{
     font-size: 20px;
 }
-nav{
-    top:47px;
+nav {
+        top: 150px;
+    }
+section.container-img {
+    display: flex;
+    justify-content: center;
+    margin: 0.9em;
 }
 }
 
 @media only screen and (max-width: 320px) {
-h1 {
-    padding: 20px 0px;
-}
+    h1 {
+        padding: 20px 0px;
+    }
+    nav {
+        top: 150px;
+    }
 }
