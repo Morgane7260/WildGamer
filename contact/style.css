@@ -347,6 +347,7 @@ nav ul li a{
     display:inline-block; 
     transition: all 0.5s ease 0s;
 }
+
 nav ul li a:hover {
     background-color:#ffffff; 
     color:#BA2E2E; 
@@ -586,28 +587,28 @@ nav ul li a{
 }
 
 @media only screen and (max-width: 360px) {
-h1{
-    font-size:20px;
-}
-label{
-    padding:5px 0px;
-}
+    h1 {
+        font-size:20px;
+    }
+    label {
+        padding:5px 0px;
+    }
 
-.title {
-    font-size: 29px;
-}
+    .title {
+        font-size: 29px;
+    }
 
-#logo{
-    font-size: 10px;
-}
-nav {
+    #logo {
+        font-size: 10px;
+    }
+    nav {
         top: 150px;
     }
-section.container-img {
-    display: flex;
-    justify-content: center;
-    margin: 0.9em;
-}
+    section.container-img {
+        display: flex;
+        justify-content: center;
+        margin: 0.9em;
+    }
 }
 
 @media only screen and (max-width: 320px) {

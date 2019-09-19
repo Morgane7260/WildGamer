@@ -10,8 +10,30 @@ body {
 }
 
 .title {
-	color:#999999;
-	font-family: 'Monofett', cursive;
+    color:#ffffff;
+    font-family: 'Schoolbell', cursive;
+    font-size: 50px;
+}
+
+.menu {
+    color:#ffffff;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.logo {
+    color:#ffffff;
+    font-family: 'Fira Code', monospace;
+}
+
+.container {
+    color: #222;
+    font-family: 'Fira Code', monospace;
+}
+
+.block {
+    background-color: white;
+    border: solid 2px #BA2E2E;
+    margin-bottom: 2em;
 }
 
 .content {
@@ -35,8 +57,10 @@ p {
     display: flex;
     justify-content: center;
 }
-h2 {
-	font-family: 'Permanent Marker', cursive;
+
+h1, h2 {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
 }
 
 img {
@@ -87,22 +111,6 @@ a:active {
 color: #222;
 }
 
-/*@media screen and (max-width: 768px) {
-    .article {
-        flex-flow: row nowrap;
-        flex-direction: column;
-    }
-    img {
-        width: 100%;
-    }
-
-    .container :nth-child(2n) {
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    }
-}*/
-
 /* Back to Top button */
 .back {
     position: fixed;
@@ -115,6 +123,16 @@ color: #222;
 
  .backtotop {
     width: 20px;
+ }
+
+ li {
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0.9em;
+ }
+
+ ul {
+    padding-left: 0px;
  }
 
 @media screen and (max-width: 768px) {
@@ -181,8 +199,7 @@ h1{
     margin:0px auto; 
     display:table; 
     font-size:38px; 
-    padding:20px 0px; 
-    color:#222; 
+    padding:20px 0px;
     text-align:center;
 }
 
@@ -195,38 +212,42 @@ header{
 #logo{
     font-size:18px; 
     text-transform:uppercase; 
-    color:#999999; 
+    color:#ffffff; 
     font-weight:600; 
     padding:20px 0px; 
     display: flex; 
     justify-content: center;
 }
 nav{
-    width:auto; 
-    display:flex; 
+    width: auto;
+    display: flex;
     justify-content: center;
 }
 nav ul{
     display:table; 
-    margin: 0em; 
+    margin: -0.2em; 
     background-color: #222;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-nav ul li{
-    float:left;
-}
-/*nav ul li:last-child{padding-right:0px;}*/
+
 nav ul li a{
-    color:#999999; 
+    color:#ffffff; 
     font-size:18px; 
     padding: 15px 20px; 
     display:inline-block; 
     transition: all 0.5s ease 0s;
 }
-nav ul li a:hover{
-    background-color:#999999; 
+
+nav ul li a:hover {
+    background-color:#ffffff; 
     color:#BA2E2E; 
-    transition: all 0.5s ease 0s;
+    border: double 3px #BA2E2E;
+    border-radius: 10px;
+    transition: all 0.2s ease 0s;
 }
+
 label.toggle-menu {
     padding-right: 1.5em; 
     padding-top: 2em;
@@ -248,36 +269,35 @@ label.toggle-menu {
 input[type=checkbox], label{display:none;}
 
 .content{
-    display:table; 
-    width:100%;
+    display:table;
+    width:900px;
 }
 .content h2{
     font-size:18px; 
     font-weight:500; 
-    color:#222222;
+    color:#222222; 
+    border-bottom:1px solid #ffffff; 
     padding-bottom:10px; 
     margin-bottom:10px;
     text-align: center;
 }
-/*.content p{
+.content p{
     font-size:14px; 
     line-height:22px; 
     color:#222222; 
-    text-align:center;
-}*/
+    text-align: center;
+}
 
 footer {
   display:table;
   padding: 0;
   width:100%;
   display: flex;
-  justify-content: center;
   }
 
 .social {
   margin:0px auto;
-  display: flex;
-  flex-wrap: wrap;
+  display:table;
 }
 .social li {
   float:left; 
@@ -292,11 +312,10 @@ footer {
     transition: all 0.5s ease 0s;
 }
 
-/*.center {
+.center {
   display: table;
   width: 100%;
-  padding-bottom: 0;
-}*/
+}
 
 #social-test {
   display: table-cell;
@@ -309,11 +328,10 @@ div#social-test {
 }
   .social {
     padding-left: 0px;
-    width: 100.4%;
+    width: 100%;
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    background-color: #222222;
   }
   .footer {
     color: #BA2E2E;
@@ -339,62 +357,79 @@ div#social-test {
   opacity: 1;
 }
 
-@media only screen and (max-width: 980px) {
-header{
-    padding:0px 0px;
-}
-#logo{
-    padding:0px;
-    font-size: 13px;
-}
-input[type=checkbox] {
-    position: absolute; 
-    top: -9999px; 
-    left: -9999px; 
-    background:none;
-}
-input[type=checkbox]:fous{
-    background:#999999;
-}
-label {
-    float: right; 
-    display:inline-block; 
-    cursor:pointer;
-}
-input[type=checkbox]:checked ~ nav {
-    display:block;
+@media only screen and (max-width: 1440px) {
+    .nom {
+        display: flex;
+        justify-content: space-between;
+    }
+    input#nom {
+        display: block;
+        float: right;
+        width: 50%;
+    }
 }
 
-nav{
-    display:none; 
-    position:absolute; 
-    right:4px; 
-    top: 125px; 
-    background-color:#999999; 
-    padding:0px; z-index:99; 
-    border-radius: 10%;
-}
-nav ul{
-    background-color:#222222; 
-    padding-right: 5px; 
-    border-radius: 10%; 
-    border: 1px solid #BA2E2E;
-}
-nav ul li{
-    float:none; 
-    padding:0px; 
-    width:100%; 
-    display:table;
-}
-nav ul li a{
-    background-color: white; 
-    color:#222; 
-    font-size:15px; 
-    border: 1px solid #BA2E2E; 
-    display: flex; 
-    width: 70%; 
-    height: auto; 
-    justify-content: center;}
+@media only screen and (max-width: 980px) {
+    header{
+        padding:0px 0px;
+    }
+    #logo{
+        padding:0px;
+        font-size: 13px;
+    }
+    input[type=checkbox] {
+        position: absolute; 
+        top: -9999px; 
+        left: -9999px; 
+        background:none;
+    }
+    input[type=checkbox]:fous{
+        background:#fff;
+    }
+    label {
+        float: right; 
+        display:inline-block; 
+        cursor:pointer;
+    }
+    input[type=checkbox]:checked ~ nav {
+        display:block;
+    }
+
+    nav{
+        display:none; 
+        position:absolute; 
+        right:4px; 
+        top: 125px; 
+        background-color:#ffffff; 
+        padding:0px; z-index:99; 
+        border-radius: 10%;
+    }
+    nav ul{
+        background-color:#222222; 
+        padding-right: 5px; 
+        border-radius: 5%; 
+        border: 1px solid #BA2E2E;
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        padding:0px; 
+        width:100%;
+        margin: 0.2em 2em 0.2em 0.7em;
+    }
+    nav ul li a{
+        background-color: white; 
+        color:#222; 
+        font-size:15px; 
+        border: 1px solid #BA2E2E; 
+        display: flex; 
+        width: 70%; 
+        height: auto; 
+        justify-content: center;
+        white-space: nowrap;
+        align-content: space-around;
+        margin: 0.5em;
+    }
 }
 
 @media only screen and (max-width: 980px) {
@@ -411,6 +446,15 @@ nav ul li a{
     nav {
         top: 125px;
     }
+
+    .title {
+        font-size: 45px;
+    }
+
+    .logo {
+        padding: 0px;
+        font-size: 13px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -420,26 +464,40 @@ nav ul li a{
     nav {
         top: 150px;
     }
+
+    .title {
+        font-size: 34px;
+    }
+
+    .logo {
+        padding: 0px;
+        font-size: 10px;
+    }
 }
 
 @media only screen and (max-width: 360px) {
-h1{
-    font-size:20px;
-}
-label{
-    padding:5px 0px;
-}
-#logo{
-    font-size: 20px;
-}
-nav {
+    h1 {
+        font-size:20px;
+    }
+    label {
+        padding:5px 0px;
+    }
+
+    .title {
+        font-size: 29px;
+    }
+
+    #logo {
+        font-size: 10px;
+    }
+    nav {
         top: 150px;
     }
-section.container-img {
-    display: flex;
-    justify-content: center;
-    margin: 0.9em;
-}
+    section.container-img {
+        display: flex;
+        justify-content: center;
+        margin: 0.9em;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -448,5 +506,9 @@ section.container-img {
     }
     nav {
         top: 150px;
+    }
+
+    .title {
+        font-size: 28px;
     }
 }
