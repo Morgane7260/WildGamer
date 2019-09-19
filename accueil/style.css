@@ -346,8 +346,6 @@ div#social-test {
     margin: 10px;
     transition: ease .3s;
     }
-  }
-}
 
 .social:hover > li {
   opacity: 0.5;
