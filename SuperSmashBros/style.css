@@ -9,7 +9,7 @@ body {
 /*Header*/
 .title {
     color:#ffffff;
-    font-family: 'Schoolbell', cursive;
+    font-family: 'Permanent Marker', cursive;
     font-size: 50px;
 }
 
@@ -365,6 +365,7 @@ div#social-test {
     justify-content: center;
     justify-content: space-between;
     background-color: #222222;
+    padding-top: 1em;
   }
   .footer {
     color: #BA2E2E;

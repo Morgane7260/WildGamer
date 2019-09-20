@@ -5,13 +5,13 @@
 
 body {
 	background-color: #222;
-	margin: 0px 20px;
+	margin: 0 5em 2em 5em;
 	padding: 10px 0px;
 }
 
 .title {
     color:#ffffff;
-    font-family: 'Schoolbell', cursive;
+    font-family: 'Permanent Marker', cursive;
     font-size: 50px;
 }
 
@@ -117,7 +117,7 @@ color: #222;
     display: block;
     width: 23px;
     height: 22px;
-    right: 33px;
+    right: 5.1em;
     bottom: 10px;
  }
 
@@ -332,6 +332,7 @@ div#social-test {
     display: flex;
     justify-content: center;
     justify-content: space-between;
+    padding-top: 0.5em;
   }
   .footer {
     color: #BA2E2E;
