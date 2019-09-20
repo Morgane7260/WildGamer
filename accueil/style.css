@@ -381,7 +381,7 @@ div#social-test {
         left: -9999px; 
         background:none;
     }
-    input[type=checkbox]:fous{
+    input[type=checkbox] {
         background:#fff;
     }
     label {

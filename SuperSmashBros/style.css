@@ -67,10 +67,12 @@ p {
 .mode {
     font-style: italic;
     font-weight: bold;
+    color: #BA2E2E;
 }
 
 .super {
     font-style: italic;
+    color: #BA2E2E;
 }
 
 
@@ -93,7 +95,7 @@ li {
     margin: 0.8em;
 }
 
-label.pseudo {
+label.name {
     display: inline-block;
     float: left;
     width: 100%;
@@ -107,7 +109,7 @@ label.email {
 }
 
 
-input#pseudo {
+input#name {
     float: right;
     height: 1.5em;
     border: solid 1px black;
@@ -396,7 +398,7 @@ input[type=checkbox] {
     left: -9999px; 
     background:none;
 }
-input[type=checkbox]:fous{
+input[type=checkbox] {
     background:#fff;
 }
 label {
