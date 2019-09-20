@@ -84,10 +84,12 @@ p {
 .mode {
     font-style: italic;
     font-weight: bold;
+    color: #BA2E2E;
 }
 
 .super {
     font-style: italic;
+    color: #BA2E2E;
 }
 
 
@@ -110,7 +112,7 @@ li {
     margin: 0.8em;
 }
 
-label.pseudo {
+label.name {
     display: inline-block;
     float: left;
     width: 100%;
@@ -124,7 +126,7 @@ label.email {
 }
 
 
-input#pseudo {
+input#name {
     float: right;
     height: 1.5em;
     border: solid 1px black;
@@ -385,6 +387,18 @@ div#social-test {
   opacity: 1;
 }
 
+.video {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gif  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 @media only screen and (max-width: 1440px) {
     .nom {
         display: flex;
@@ -411,7 +425,7 @@ input[type=checkbox] {
     left: -9999px; 
     background:none;
 }
-input[type=checkbox]:fous{
+input[type=checkbox] {
     background:#fff;
 }
 label {
