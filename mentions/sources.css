@@ -1,15 +1,23 @@
-
 body {
-    font-family: 'Fira Code', monospace;
-    background-color: #222; 
-    font-size: 16px;
+    background-color: #222;
     margin: 0 5em 2em 5em;
 }
 
+/*Header*/
 .title {
-    color:#fff;
+    color:#ffffff;
     font-family: 'Schoolbell', cursive;
     font-size: 50px;
+}
+
+.menu {
+    color:#ffffff;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.logo {
+    color:#ffffff;
+    font-family: 'Fira Code', monospace;
 }
 
 .container {
@@ -17,123 +25,51 @@ body {
     font-family: 'Fira Code', monospace;
 }
 
-.border {
+.block {
+    background-color: white;
     border: solid 2px #BA2E2E;
+    margin-bottom: 2em;
 }
 
-div {
-    background-color: #fff;
-    height: auto;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.zoom-out img {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-.zoom-out img:hover {
-    -webkit-transform: scale(0.95);
-    transform: scale(0.95);
-}
-
+/*Titres*/
 h1, h2 {
     font-family: 'Permanent Marker', cursive;
     text-align: center;
-    color: #222;
 }
 
-hr {
-    width: 15%;
-    height: 5px;
-    background-color: #222;
-}
-
-img {
-    width: 100.6%;
-    height: auto;
-    margin-bottom: -0.3em;
-}
-
-
-p {
-    color: black;
-    margin: 15px;
-    padding: 15px;
-}
-
-.mode {
-    font-style: italic;
-    font-weight: bold;
-    color: #BA2E2E;
-}
-
-.super {
-    font-style: italic;
-    color: #BA2E2E;
-}
-
-
-.formulaire {
-    width: 100%;
+/*Texte*/
+.texte {
     display: flex;
     justify-content: center;
-    border: solid 2px #BA2E2E;
-    background-color: white;
+    margin: 2em 0;
+    text-align: center;
+}
+
+span {
+    font-size: 17px;
+    color: #BA2E2E;
+}
+
+.texte p {
+    text-align: center;
+    max-width: 1200px;
+}
+
+p {
+    margin: 0 2em;
+}
+
+/*Ligne*/
+hr {
+    width: 10%;
+    height: 3px;
+    background-color: #222;
+    text-align: center;
 }
 
 ul {
     list-style:none;
     padding: 0;
-}
-
-li {
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0.8em;
-}
-
-label.name {
-    display: inline-block;
-    float: left;
-    width: 100%;
-}
-
-label.email {
-    display: inline-block;
-    float: left;
-    margin-bottom: 1em;
-    width: 100%;
-}
-
-
-input#name {
-    float: right;
-    height: 1.5em;
-    border: solid 1px black;
-    width: 50%;
-    margin-bottom: 1em;
-    padding-left: 0.5em;
-}
-
-.nom {
-    width: 100%;
-}
-
-.email {
-    width: 100%;
-}
-
-textarea {
-    border: solid 1px black;
-    width: 98.5%;
-}
-
-
-.bouton {
-    float: right;
 }
 
 /* Back to Top button */
@@ -156,37 +92,29 @@ textarea {
         padding: 0.2em;
         margin: 1em;
     }
-
-    .container-img {
-        flex-direction: column;
+    
+    .title {
+        font-size: 45px;
     }
 
-    .container-img img {
-        width: 80px;
-        height: 80px;
-        border-radius: 5%;
-        margin: 0.5em;
+    .logo {
+        padding: 0px;
+        font-size: 16px;
     }
-
-    .texte {
-        font-size: 15px;
-        margin: 0.5em;
-    }
-
-    span {
-        font-size: 17px;
-    }
-
-    .social{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
 }
 
  @media screen and (max-width: 525px) {
     div.avatar {
         margin-bottom: 3.5em;
+    }
+
+    .title {
+        font-size: 42px;
+    }
+
+    .logo {
+        padding: 0px;
+        font-size: 13px;
     }
 } 
 
@@ -195,11 +123,10 @@ textarea {
 *{
     text-decoration:none;
 }
-
 body{
-    padding:0px;
+    padding:0px; 
+    font-family: 'Open Sans', sans-serif;
 }
-
 section{
     width:100%; 
     max-width:1200px; 
@@ -222,10 +149,10 @@ header{
     background-color:#222; 
     margin-bottom:0;
 }
-.logo{
+#logo{
     font-size:18px; 
-    text-transform:uppercase; 
-    color:#fff; 
+    text-transform:uppercase;
+    color:#ffffff; 
     font-weight:600; 
     padding:20px 0px; 
     display: flex; 
@@ -241,25 +168,27 @@ nav ul{
     margin: 0em; 
     background-color: #222;
 }
+
 nav ul li{
     float:left;
 }
-/*nav ul li:last-child{padding-right:0px;}*/
+
 nav ul li a{
-    color:#fff; 
-    font-family: 'Permanent Marker', cursive;
+    color:#ffffff; 
     font-size:18px; 
     padding: 15px 20px; 
     display:inline-block; 
     transition: all 0.5s ease 0s;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     background-color:#ffffff; 
     color:#BA2E2E; 
     border: double 3px #BA2E2E;
     border-radius: 10px;
     transition: all 0.2s ease 0s;
 }
+
 label.toggle-menu {
     padding-right: 1.5em; 
     padding-top: 2em;
@@ -271,7 +200,7 @@ label.toggle-menu {
 .toggle-menu ul li{
     width:100%; 
     height:3px; 
-    background-color:#fff; 
+    background-color:#999999; 
     margin-bottom:4px;
 }
 .toggle-menu ul li:last-child{
@@ -288,16 +217,17 @@ input[type=checkbox], label{display:none;}
 .content h2{
     font-size:18px; 
     font-weight:500; 
-    color:#fff; 
-    border-bottom:1px solid #fff; 
+    color:#ffffff; 
+    border-bottom:1px solid #ffffff; 
     display:table; 
     padding-bottom:10px; 
     margin-bottom:10px;
 }
+
 .content p{
     font-size:14px; 
     line-height:22px; 
-    color:#fff; 
+    color:#ffffff; 
     text-align:justify;
 }
 
@@ -345,11 +275,10 @@ div#social-test {
 }
   .social {
     padding-left: 0px;
-    width: 100.4%;
+    width: 100%;
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    background-color: #222222;
   }
   .footer {
     color: #BA2E2E;
@@ -359,7 +288,7 @@ div#social-test {
     height: 50px;
     line-height: 50px;
     padding: 1%;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     cursor: pointer;
     margin: 10px;
     transition: ease .3s;
@@ -371,18 +300,6 @@ div#social-test {
 
 .social:hover > li:hover {
   opacity: 1;
-}
-
-.video {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.gif  {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -398,13 +315,12 @@ div#social-test {
 }
 
 @media only screen and (max-width: 980px) {
-header{
+header {
     padding:0px 0px;
 }
-.logo{
-    color: #fff;
-    padding: 0px;
-    font-family: 'Fira Code', monospace;
+#logo{
+    padding:0px;
+    font-size: 13px;
 }
 input[type=checkbox] {
     position: absolute; 
@@ -412,9 +328,11 @@ input[type=checkbox] {
     left: -9999px; 
     background:none;
 }
+
 input[type=checkbox] {
     background:#fff;
 }
+
 label {
     float: right; 
     display:inline-block; 
@@ -429,14 +347,14 @@ nav{
     position:absolute; 
     right:4px; 
     top: 125px; 
-    background-color:#fff; 
+    background-color:#ffffff; 
     padding:0px; z-index:99; 
     border-radius: 10%;
 }
 nav ul{
     background-color:#222222; 
     padding-right: 5px; 
-    border-radius: 10%; 
+    border-radius: 5%; 
     border: 1px solid #BA2E2E;
 }
 nav ul li{
@@ -470,6 +388,15 @@ nav ul li a{
     nav {
         top: 125px;
     }
+
+    .title {
+        font-size: 45px;
+    }
+
+    .logo {
+        padding: 0px;
+        font-size: 13px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -479,26 +406,40 @@ nav ul li a{
     nav {
         top: 150px;
     }
+
+    .title {
+        font-size: 34px;
+    }
+
+    .logo {
+        padding: 0px;
+        font-size: 10px;
+    }
 }
 
 @media only screen and (max-width: 360px) {
-h1{
-    font-size:20px;
-}
-label{
-    padding:5px 0px;
-}
-.logo{
-    font-size: 20px;
-}
-nav {
+    h1 {
+        font-size:20px;
+    }
+    label {
+        padding:5px 0px;
+    }
+
+    .title {
+        font-size: 29px;
+    }
+
+    #logo {
+        font-size: 10px;
+    }
+    nav {
         top: 150px;
     }
-section.container-img {
-    display: flex;
-    justify-content: center;
-    margin: 0.9em;
-}
+    section.container-img {
+        display: flex;
+        justify-content: center;
+        margin: 0.9em;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -507,5 +448,9 @@ section.container-img {
     }
     nav {
         top: 150px;
+    }
+
+    .title {
+        font-size: 28px;
     }
 }
