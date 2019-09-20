@@ -1,6 +1,6 @@
 body {
     background-color: #222;
-    margin: 0 2em 2em 2em;
+    margin: 0 5em 2em 5em;
 }
 
 /*Header*/
@@ -193,7 +193,7 @@ textarea {
     display: block;
     width: 23px;
     height: 22px;
-    right: 33px;
+    right: 5.1em;
     bottom: 10px;
  }
 

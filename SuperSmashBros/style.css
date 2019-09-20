@@ -3,7 +3,7 @@ body {
     font-family: 'Fira Code', monospace;
     background-color: #222; 
     font-size: 16px;
-    margin: 2em;
+    margin: 0 5em 2em 5em;
 }
 
 .title {
@@ -142,7 +142,7 @@ textarea {
     display: block;
     width: 23px;
     height: 22px;
-    right: 33px;
+    right: 5.1em;
     bottom: 10px;
  }
 
@@ -195,10 +195,11 @@ textarea {
 *{
     text-decoration:none;
 }
+
 body{
-    padding:0px; 
-    font-family: 'Open Sans', sans-serif;
+    padding:0px;
 }
+
 section{
     width:100%; 
     max-width:1200px; 
@@ -221,7 +222,7 @@ header{
     background-color:#222; 
     margin-bottom:0;
 }
-#logo{
+.logo{
     font-size:18px; 
     text-transform:uppercase; 
     color:#fff; 
@@ -400,9 +401,10 @@ div#social-test {
 header{
     padding:0px 0px;
 }
-#logo{
+.logo{
+    color: #fff
     padding:0px;
-    font-size: 13px;
+    font-family: 'Fira Code', monospace;
 }
 input[type=checkbox] {
     position: absolute; 
@@ -486,7 +488,7 @@ h1{
 label{
     padding:5px 0px;
 }
-#logo{
+.logo{
     font-size: 20px;
 }
 nav {
