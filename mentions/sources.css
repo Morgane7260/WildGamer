@@ -37,63 +37,12 @@ h1, h2 {
     text-align: center;
 }
 
-/*Images*/
-.container-img {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-    margin: 2em auto;
-}
-
-.container-img img{
-    width: 100px;
-    height: 100px;
-    -webkit-transition: .3s ease-in-out !important; 
-    transition: .4s ease-in-out !important;
-    border-radius: 5%;
-    margin: 1em;
-}
-
-.container-img img:hover {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%; 
-}
-
-div.avatar {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 25%;
-    justify-content: center;
-}
-
-.alex, .ismael, .morgane, .elodie {
-    opacity: 0;
-}
-
-.alex-img:hover + .alex {
-    opacity: 1;
-}
-
-.ismael-img:hover + .ismael {
-    opacity: 1;
-}
-
-.morgane-img:hover + .morgane {
-    opacity: 1;
-}
-
-.elodie-img:hover + .elodie {
-    opacity: 1;
-}
-
 /*Texte*/
 .texte {
     display: flex;
     justify-content: center;
     margin: 2em 0;
+    text-align: center;
 }
 
 span {
@@ -109,11 +58,6 @@ span {
 p {
     margin: 0 2em;
 }
-.gifMario {
-    width: 40%;
-    border-radius: 5px;
-    border: solid 2px #222222;
-}
 
 /*Ligne*/
 hr {
@@ -123,68 +67,9 @@ hr {
     text-align: center;
 }
 
-/*Formulaire*/
-.formulaire {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-
-}
-
 ul {
     list-style:none;
     padding: 0;
-}
-
-li {
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0.8em;
-}
-
-label.nom {
-    display: inline-block;
-    margin-bottom: 1em;
-    width: 100%;
-}
-
-label.email {
-    display: inline-block;
-    margin-bottom: 1em;
-    width: 100%;
-}
-
-input#nom{
-    height: 1.5em;
-    border: solid 1px black;
-    float: right;
-    width: 50%;
-}
-
-input#email {
-    height: 1.5em;
-    border: solid 1px black;
-    float: right;
-    width: 50%;
-}
-
-.nom {
-    width: 100%;
-}
-
-.email {
-    width: 100%;
-}
-
-textarea {
-    border: solid 1px black;
-    width: 98.5%;
-}
-
-
-.bouton {
-    float: right;
 }
 
 /* Back to Top button */
@@ -216,59 +101,6 @@ textarea {
         padding: 0px;
         font-size: 16px;
     }
-
-    .container-img {
-        flex-direction: column;
-    }
-
-    .container-img img {
-        width: 80px;
-        height: 80px;
-        border-radius: 5%;
-        margin: 0.5em;
-    }
-
-    div.avatar {
-        align-items: center;
-        align-self: center;
-        height: 25%;
-        width: 40%;
-    }
-
-    div.alex {
-        height: 2em;
-        width: 15em;
-    }
-
-    div.ismael {
-        height: 2em;
-        width: 15em;
-    }
-
-    div.morgane {
-        height: 2em;
-        width: 15em;
-    }
-
-    div.elodie {
-        height: 2em;
-        width: 15em;
-    }
-
-    .texte {
-        font-size: 15px;
-        margin: 0.5em;
-    }
-
-    span {
-        font-size: 17px;
-    }
-
-    .social{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
 }
 
  @media screen and (max-width: 525px) {
@@ -345,6 +177,7 @@ nav ul li a{
     color:#ffffff; 
     font-size:18px; 
     padding: 15px 20px; 
+    display:inline-block; 
     transition: all 0.5s ease 0s;
 }
 
