@@ -3,7 +3,7 @@ body {
     font-family: 'Fira Code', monospace;
     background-color: #222; 
     font-size: 16px;
-    margin: 2em;
+    margin: 0 5em 2em 5em;
 }
 
 .title {
@@ -67,10 +67,12 @@ p {
 .mode {
     font-style: italic;
     font-weight: bold;
+    color: #BA2E2E;
 }
 
 .super {
     font-style: italic;
+    color: #BA2E2E;
 }
 
 
@@ -93,7 +95,7 @@ li {
     margin: 0.8em;
 }
 
-label.pseudo {
+label.name {
     display: inline-block;
     float: left;
     width: 100%;
@@ -107,7 +109,7 @@ label.email {
 }
 
 
-input#pseudo {
+input#name {
     float: right;
     height: 1.5em;
     border: solid 1px black;
@@ -140,7 +142,7 @@ textarea {
     display: block;
     width: 23px;
     height: 22px;
-    right: 33px;
+    right: 5.1em;
     bottom: 10px;
  }
 
@@ -193,10 +195,11 @@ textarea {
 *{
     text-decoration:none;
 }
+
 body{
-    padding:0px; 
-    font-family: 'Open Sans', sans-serif;
+    padding:0px;
 }
+
 section{
     width:100%; 
     max-width:1200px; 
@@ -219,7 +222,7 @@ header{
     background-color:#222; 
     margin-bottom:0;
 }
-#logo{
+.logo{
     font-size:18px; 
     text-transform:uppercase; 
     color:#fff; 
@@ -370,6 +373,18 @@ div#social-test {
   opacity: 1;
 }
 
+.video {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gif  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 @media only screen and (max-width: 1440px) {
     .nom {
         display: flex;
@@ -386,9 +401,10 @@ div#social-test {
 header{
     padding:0px 0px;
 }
-#logo{
+.logo{
+    color: #fff
     padding:0px;
-    font-size: 13px;
+    font-family: 'Fira Code', monospace;
 }
 input[type=checkbox] {
     position: absolute; 
@@ -396,7 +412,7 @@ input[type=checkbox] {
     left: -9999px; 
     background:none;
 }
-input[type=checkbox]:fous{
+input[type=checkbox] {
     background:#fff;
 }
 label {
@@ -472,7 +488,7 @@ h1{
 label{
     padding:5px 0px;
 }
-#logo{
+.logo{
     font-size: 20px;
 }
 nav {
