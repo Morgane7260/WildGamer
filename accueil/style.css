@@ -1,0 +1,513 @@
+*{
+    text-decoration:none;
+    list-style: none;
+}
+
+body {
+	background-color: #222;
+	margin: 0 5em 2em 5em;
+	padding: 10px 0px;
+}
+
+.title {
+    color:#ffffff;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+}
+
+.menu {
+    color:#ffffff;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.logo {
+    color:#ffffff;
+    font-family: 'Fira Code', monospace;
+}
+
+.container {
+    color: #222;
+    font-family: 'Fira Code', monospace;
+}
+
+.block {
+    background-color: white;
+    border: solid 2px #BA2E2E;
+    margin-bottom: 2em;
+}
+
+.content {
+    height: 100%;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+p {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.article {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top:  10px;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2 {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
+
+img {
+	width: 50%;
+	height: auto;
+}
+.zoom-out div img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom-out div:hover img {
+	-webkit-transform: scale(0.95);
+	transform: scale(0.95);
+}
+
+.article:nth-child(2n) {
+	flex-flow: row-reverse;
+	justify-content: center;
+}
+
+.content {
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    padding: 10px 0;
+    font-family: 'Fira Code', monospace;
+}
+
+hr {
+	width: 15%;
+	height: 5px;
+	background-color: #222; 
+}
+
+a {
+	text-decoration: none;
+	color: #222;
+}
+
+a:hover {
+background-color: #222;
+color: white;
+}
+
+a:active {
+color: #222;
+}
+
+/* Back to Top button */
+.back {
+    position: fixed;
+    display: block;
+    width: 23px;
+    height: 22px;
+    right: 5.1em;
+    bottom: 10px;
+ }
+
+ .backtotop {
+    width: 20px;
+ }
+
+ li {
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0.9em;
+ }
+
+ ul {
+    padding-left: 0px;
+ }
+
+@media screen and (max-width: 768px) {
+    h1, h2 {
+        text-align: center;
+        padding: 0.2em;
+        margin: 1em;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .texte {
+        font-size: 15px;
+        margin: 0.5em;
+    }
+
+    span {
+        font-size: 17px;
+    }
+
+    .social{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .article:nth-child(2n) {
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
+
+/*Header/Footer*/
+body{
+    padding:0px; 
+    font-family: 'Open Sans', sans-serif;
+}
+section{
+    width:100%; 
+    max-width:1200px; 
+    margin:0px auto; 
+    display:table; 
+    position:relative;
+}
+
+h1{
+    margin:0px auto; 
+    display:table; 
+    font-size:38px; 
+    padding:20px 0px;
+    text-align:center;
+}
+
+header{
+    width:100%; 
+    display:table; 
+    background-color:#222; 
+    margin-bottom:0;
+}
+#logo{
+    font-size:18px; 
+    text-transform:uppercase; 
+    color:#ffffff; 
+    font-weight:600; 
+    padding:20px 0px; 
+    display: flex; 
+    justify-content: center;
+}
+nav{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    display:table; 
+    margin: -0.2em; 
+    background-color: #222;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color:#ffffff; 
+    font-size:18px; 
+    padding: 15px 20px; 
+    display:inline-block; 
+    transition: all 0.5s ease 0s;
+}
+
+nav ul li a:hover {
+    background-color:#ffffff; 
+    color:#BA2E2E; 
+    border: double 3px #BA2E2E;
+    border-radius: 10px;
+    transition: all 0.2s ease 0s;
+}
+
+label.toggle-menu {
+    padding-right: 1.5em; 
+    padding-top: 2em;
+}
+.toggle-menu ul{
+    display:table; 
+    width:50%;
+}
+.toggle-menu ul li{
+    width:100%; 
+    height:3px; 
+    background-color:#fff; 
+    margin-bottom:4px;
+}
+.toggle-menu ul li:last-child{
+    margin-bottom:0px;
+}
+
+input[type=checkbox], label{display:none;}
+
+.content{
+    display:table;
+    width:900px;
+}
+.content h2{
+    font-size:18px; 
+    font-weight:500; 
+    color:#222222; 
+    border-bottom:1px solid #ffffff; 
+    padding-bottom:10px; 
+    margin-bottom:10px;
+    text-align: center;
+}
+.content p{
+    font-size:14px; 
+    line-height:22px; 
+    color:#222222; 
+    text-align: center;
+}
+
+footer {
+  display:table;
+  padding: 0;
+  width:100%;
+  display: flex;
+  }
+
+.social {
+  margin:0px auto;
+  display:table;
+}
+.social li {
+  float:left; 
+  padding:0px 10px;
+}
+.social li i {
+  color:#fff; 
+  transition: all 0.5s ease 0s;
+}
+.social li i:hover {
+    color: #BA2E2E;
+    transition: all 0.5s ease 0s;
+}
+
+.center {
+  display: table;
+  width: 100%;
+}
+
+#social-test {
+  display: table-cell;
+  text-align: center;
+  font-size: 30px;
+}
+
+div#social-test {
+    padding-bottom: 0px;
+}
+  .social {
+    padding-left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 0.5em;
+  }
+  .footer {
+    color: #BA2E2E;
+    list-style-type: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding: 1%;
+    border: 1px solid #fff;
+    cursor: pointer;
+    margin: 10px;
+    transition: ease .3s;
+    }
+
+.social:hover > li {
+  opacity: 0.5;
+}
+
+.social:hover > li:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1440px) {
+    .nom {
+        display: flex;
+        justify-content: space-between;
+    }
+    input#nom {
+        display: block;
+        float: right;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    header{
+        padding:0px 0px;
+    }
+    #logo{
+        padding:0px;
+        font-size: 13px;
+    }
+    input[type=checkbox] {
+        position: absolute; 
+        top: -9999px; 
+        left: -9999px; 
+        background:none;
+    }
+    input[type=checkbox] {
+        background:#fff;
+    }
+    label {
+        float: right; 
+        display:inline-block; 
+        cursor:pointer;
+    }
+    input[type=checkbox]:checked ~ nav {
+        display:block;
+    }
+
+    nav{
+        display:none; 
+        position:absolute; 
+        right:4px; 
+        top: 125px; 
+        background-color:#ffffff; 
+        padding:0px; z-index:99; 
+        border-radius: 10%;
+    }
+    nav ul{
+        background-color:#222222; 
+        padding-right: 5px; 
+        border-radius: 5%; 
+        border: 1px solid #BA2E2E;
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        padding:0px; 
+        width:100%;
+        margin: 0.2em 2em 0.2em 0.7em;
+    }
+    nav ul li a{
+        background-color: white; 
+        color:#222; 
+        font-size:15px; 
+        border: 1px solid #BA2E2E; 
+        display: flex; 
+        width: 70%; 
+        height: auto; 
+        justify-content: center;
+        white-space: nowrap;
+        align-content: space-around;
+        margin: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+.content{width:100%;}
+}
+
+@media only screen and (max-width: 568px) {
+    h1{
+        padding:25px 0px;
+    }
+    h1 span{
+        display:block;
+    }
+    nav {
+        top: 125px;
+    }
+
+    .title {
+        font-size: 45px;
+    }
+
+    .logo {
+        padding: 0px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    section {
+        max-width: 90%;
+    }
+    nav {
+        top: 150px;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+
+    .logo {
+        padding: 0px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    h1 {
+        font-size:20px;
+    }
+    label {
+        padding:5px 0px;
+    }
+
+    .title {
+        font-size: 29px;
+    }
+
+    #logo {
+        font-size: 10px;
+    }
+    nav {
+        top: 150px;
+    }
+    section.container-img {
+        display: flex;
+        justify-content: center;
+        margin: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {
+        padding: 20px 0px;
+    }
+    nav {
+        top: 150px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+}
